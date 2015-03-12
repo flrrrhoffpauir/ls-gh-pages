@@ -1,0 +1,70 @@
+/*
+Error: Undefined variable: "$font_base".
+        on line 40 of /var/folders/6m/9bg754sn7fq4gkns7ly3x6d8tj5dww/T/gulp-ruby-sass/styles.scss
+
+35: 
+36: // Gmail strips out the body tag
+37: body, #bodyTable {
+38:     background-color: $color_background;
+39:     color: $color_body;
+40:     font-family: $font_base;
+41: 	height: 100% !important;
+42: 	margin: 0;
+43: 	padding: 0;
+44: 	width: 100% !important;
+45: }
+
+Backtrace:
+/var/folders/6m/9bg754sn7fq4gkns7ly3x6d8tj5dww/T/gulp-ruby-sass/styles.scss:40
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/variable.rb:49:in `_perform'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/node.rb:50:in `perform'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/plugin.rb:82:in `update_stylesheets'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/exec/base.rb:52:in `parse'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/lib/sass/exec/base.rb:19:in `parse!'
+/opt/local/lib/ruby2.1/gems/2.1.0/gems/sass-3.4.7/bin/sass:13:in `<top (required)>'
+/opt/local/bin/sass:23:in `load'
+/opt/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$font_base\".\A         on line 40 of /var/folders/6m/9bg754sn7fq4gkns7ly3x6d8tj5dww/T/gulp-ruby-sass/styles.scss\A \A 35: \A 36: // Gmail strips out the body tag\A 37: body, #bodyTable {\A 38:     background-color: $color_background;\A 39:     color: $color_body;\A 40:     font-family: $font_base;\A 41: 	height: 100% !important;\A 42: 	margin: 0;\A 43: 	padding: 0;\A 44: 	width: 100% !important;\A 45: }"; }

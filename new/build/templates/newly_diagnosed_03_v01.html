@@ -1,0 +1,587 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Navigation Series</title>
+    
+<style>
+
+body,
+div,
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0 none;
+  display: block;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none; }
+
+a img {
+  border: 0 none; }
+
+a,
+a:link,
+a:hover,
+a:visited {
+  color: #0D6BD8; }
+
+td,
+table {
+  *border-collapse: collapse;
+  /* IE7 and lower */
+  border-spacing: 0; }
+
+td {
+  text-align: center;
+  vertical-align: top; }
+
+body,
+#bodyTable {
+  background-color: #EAEAEA;
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important; }
+
+ul {
+  margin: 0;
+  padding-left: 40px; }
+
+li {
+  margin-bottom: 15px; }
+  li:last-child {
+    margin-bottom: 0; }
+
+b,
+strong {
+  font-weight: 600; }
+
+em {
+  font-weight: 400; }
+
+.ExternalClass {
+  line-height: 100%;
+  width: 100%; }
+  .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; }
+
+#outlook a {
+  padding: 0; }
+
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 0; }
+
+h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 0; }
+
+h5 {
+  color: #555555;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.4em;
+  margin: 0; }
+  h5 .a {
+    color: #555555 !important; }
+
+h6 {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin: 0; }
+
+#sidebar {
+  background-color: #333333;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FEFEFE;
+  left: 0;
+  line-height: 1.2rem;
+  overflow-y: auto;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 275px; }
+  #sidebar a {
+    color: #FEFEFE;
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+    font-size: 14px;
+    font-size: 0.875rem; }
+    #sidebar a:hover {
+      color: #cbcbcb; }
+  #sidebar .post-list {
+    list-style-type: none;
+    margin-bottom: 50px;
+    padding: 0;
+    text-align: left; }
+    #sidebar .post-list:last-child {
+      margin-bottom: 0; }
+  #sidebar .post-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0; }
+    #sidebar .post-item:last-child {
+      border-bottom: 0 none; }
+  #sidebar h1 {
+    color: #DB3E3E !important;
+    margin: 0; }
+
+#viewport {
+  margin-left: 275px;
+  padding: 20px; }
+  #viewport .post {
+    margin-bottom: 50px; }
+  #viewport h1 {
+    padding-top: 20px; }
+
+/**
+ * Override body background color
+ */
+.toc {
+  background-color: #FEFEFE; }
+
+.content {
+  padding: 25px 0;
+  width: 600px; }
+
+.logo {
+  padding: 0 0 0 50px;
+  text-align: left; }
+  .logo img {
+    display: block; }
+  .logo.foundation {
+    background-color: #FFFFFF; }
+
+.note-container {
+  background-color: #FFFFFF;
+  padding: 35px 50px; }
+  .note-container td {
+    line-height: 1.4em;
+    padding: 0 0 20px 0; }
+    .note-container td.header h1 {
+      padding-top: 30px; }
+
+.navigator {
+  text-align: center; }
+  .navigator .desc {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-style: italic; }
+
+td {
+  text-align: left; }
+  td.last {
+    padding: 0 0 0 0; }
+  td.button {
+    background-color: #FECC09;
+    border-radius: 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-size: 1.5rem;
+    padding: 15px 10px;
+    text-align: center; }
+    td.button a {
+      color: #000000;
+      display: block;
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease-out;
+              transition: all 0.2s ease-out; }
+
+.question-list {
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 0; }
+  .question-list.last {
+    margin: 0; }
+  .question-list .arrow {
+    padding-left: 20px;
+    text-align: right; }
+  .question-list .first {
+    background-color: #4E4E4E;
+    border-radius: 4px 4px 0 0;
+    padding: 10px 20px; }
+  .question-list .question {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0;
+    padding: 20px; }
+  .question-list td {
+    padding: 0;
+    vertical-align: middle; }
+
+.cta {
+  padding: 15px 0 0 0 !important; }
+  .cta .centered-text {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .cta h6 {
+    font-size: 24px;
+    font-size: 1.5rem; }
+
+.a {
+  border-bottom: 2px solid #FECC09;
+  color: #000000 !important;
+  display: inline;
+  text-decoration: none; }
+
+.live {
+  font-weight: normal; }
+
+.centered-text {
+  text-align: center !important; }
+
+.responsive-img {
+  height: auto !important;
+  max-width: 600px !important;
+  width: 100% !important; }
+
+.white {
+  background-color: #FFFFFF; }
+
+.footer .links {
+  padding: 6px 0; }
+  .footer .links table {
+    border-collapse: separate; }
+.footer a {
+  color: #0E0E0D;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: text-top; }
+.footer .org a {
+  font-size: 14px;
+  line-height: 12px; }
+.footer .information {
+  padding: 0 25px; }
+.footer .unsubscribe {
+  color: #6B6B69;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 25px 0; }
+  .footer .unsubscribe a {
+    color: #6B6B69 !important;
+    font-size: 14px  !important;
+    font-weight: 200  !important;
+    text-decoration: underline  !important;
+    text-transform: none  !important;
+    vertical-align: baseline  !important; }
+.footer .copyright {
+  color: #979795;
+  font-size: 12px; }
+
+.desktop-hidden,
+.desktop-hidden table {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  max-height: 0 !important;
+  mso-hide: all !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  width: 0 !important; }
+
+@media screen and (max-width: 600px) {
+  td[class="note-container"] {
+    padding: 20px !important; }
+  td[class="footer"] {
+    padding: 0 10px !important; }
+    td[class="footer"] .org {
+      padding: 5px 15px !important; }
+      td[class="footer"] .org a {
+        font-size: 12px !important; }
+  td[class="navigator"] {
+    display: none; }
+  td [class="footer-link"] {
+    padding: 5px 15px !important; }
+  td [class="information"] {
+    padding: 0 !important; }
+
+  table[class="responsive-table"] {
+    width: 100% !important; }
+
+  div[class="phone-hidden"],
+  div[class="phone-hidden"] table {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    max-height: 0 !important;
+    mso-hide: all !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important; }
+
+  div[class="desktop-hidden"],
+  div[class="desktop-hidden"] table {
+    display: block !important;
+    height: auto !important;
+    margin: auto !important;
+    max-height: none !important;
+    mso-hide: all !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    visibility: visible !important;
+    width: auto !important; } }
+
+</style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #EAEAEA; color: #000000; font-family: Helvetica, Arial, sans-serif; height: 100%; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+
+    <!-- BODY TABLE -->
+    <table id="bodyTable" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="*border-collapse: collapse; border-spacing: 0; background-color: #EAEAEA; color: #000000; font-family: Helvetica, Arial, sans-serif; height: 100%; margin: 0; padding: 0; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tr>
+            <td style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top;">
+
+                <!-- CONTAINER TABLE -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tr>
+                        <td class="content" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; padding: 25px 0; width: 600px;">
+
+                            <!-- CONTENT TABLE -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <tr>
+                                    <td style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top;">
+                                        <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            <tr>
+                                                <td class="logo" valign="bottom" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; padding: 0 0 0 50px;">
+                                                    <a href="http://www.livestrong.org" style="color: #0D6BD8;">
+                                                        <img src="http://images.livestrong.org/welcome-emails/2014/livestrong-logo-top.png" alt="LIVESTRONG" border="0" height="32" width="229" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top;">
+                                        <table align="center" border="0" cellspacing="0" cellpadding="0" class="white" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;">
+                                            <tr>
+                                                <td class="logo foundation" valign="top" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; padding: 0 0 0 50px; background-color: #FFFFFF;">
+                                                    <a href="http://www.livestrong.org" style="color: #0D6BD8;">
+                                                        <img src="http://images.livestrong.org/welcome-emails/2014/livestrong-logo-bottom.png" alt="Foundation" border="0" height="32" width="229" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- NOTE TO VIEWER -->
+                                <tr>
+                                    <td class="note-container" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; background-color: #FFFFFF; padding: 35px 50px;">
+                                        <div style="margin: 0; padding: 0;">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                <tr>
+                                                    <td style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; line-height: 1.4em; padding: 0 0 20px 0;">
+                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                            <tr>
+                                                                <td class="header" width="60%" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; line-height: 1.4em; padding: 0 0 20px 0;">
+                                                                    <img src="http://images.livestrong.org/2014/nav_series/stronger_than_you_know.gif" alt="You are stronger than you know." height="122" width="277" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                                    <h5 style="font-weight: 400; color: #555555; font-family: Helvetica, Arial, sans-serif; font-size: 0.9375rem; line-height: 1.4em; margin: 0;">We know this is a scary time, but you are a strong individual. We believe in you. It’s common and normal to feel a wide range of emotions during cancer treatment. We are here to help you acknowledge the rage and accept the tears.</h5>
+                                                                </td>
+                                                                <td class="navigator" style="*border-collapse: collapse; border-spacing: 0; text-align: center; vertical-align: top; line-height: 1.4em; padding: 0 0 20px 0;">
+                                                                    <div class="phone-hidden" style="margin: 0; padding: 0;">
+                                                                        <img src="http://images.livestrong.org/2014/nav_series/nav_series_email_abby.png" alt="Abby LIVESTRONG Cancer Navigator" border="0" class="responsive-img" width="" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 600px; width: 100%;" />
+                                                                        <h3 style="font-weight: 400; font-family: Helvetica, Arial, sans-serif; font-size: 1.5rem; margin: 0;">Abby</h3>
+                                                                        <span class="desc" style="font-family: Helvetica, Arial, sans-serif; font-size: 0.75rem; font-style: italic;">LIVE<strong style="font-weight: 600;">STRONG</strong> Cancer Navigator</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="last" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; line-height: 1.4em; padding: 0 0 0 0;">
+                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="question-list last" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border: 1px solid #E1E1E1; border-radius: 4px; -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07); list-style-type: none; margin-bottom: 20px; padding: 0; margin: 0;">
+                                                            <tr>
+                                                                <td class="question" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 20px; border-bottom: 1px solid #CCCCCC; margin: 0;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td width="100%" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 0;"><h5 style="font-weight: 400; color: #555555; font-family: Helvetica, Arial, sans-serif; font-size: 0.9375rem; line-height: 1.4em; margin: 0;">A cancer diagnosis can cause feelings of confusion, anxiety and depression. <a class="a" href="http://www.livestrong.org/we-can-help/just-diagnosed/facing-your-fears?utm_source=message-3&amp;utm_medium=email&amp;utm_content=link-1&amp;utm_campaign=newly-diagnosed-nav-series" style="color: #555555; border-bottom: 2px solid #FECC09; display: inline; text-decoration: none;">We can help you face your fears.</a></h5></td>
+                                                                            <td class="arrow" style="*border-collapse: collapse; border-spacing: 0; text-align: right; vertical-align: middle; line-height: 1.4em; padding: 0; padding-left: 20px;">
+                                                                                <a href="http://www.livestrong.org/we-can-help/just-diagnosed/facing-your-fears/" style="color: #0D6BD8;">
+                                                                                    <img src="http://images.livestrong.org/2014/nav_series/arrow.png" alt="Arrow" border="0" height="28" width="16" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="question" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 20px; border-bottom: 1px solid #CCCCCC; margin: 0;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td width="100%" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 0;"><h5 style="font-weight: 400; color: #555555; font-family: Helvetica, Arial, sans-serif; font-size: 0.9375rem; line-height: 1.4em; margin: 0;">Following a cancer diagnosis, what is most important to you might change. <a class="a" href="http://assets.livestrong.org/pdfs/Setting_Personal_Priorities.pdf?utm_source=message-3&amp;utm_medium=email&amp;utm_content=link-2&amp;utm_campaign=newly-diagnosed-nav-series" style="color: #555555; border-bottom: 2px solid #FECC09; display: inline; text-decoration: none;">Consider the following when you want to prioritize your life.</a></h5></td>
+                                                                            <td class="arrow" style="*border-collapse: collapse; border-spacing: 0; text-align: right; vertical-align: middle; line-height: 1.4em; padding: 0; padding-left: 20px;">
+                                                                                <a href="http://assets.livestrong.org/pdfs/Setting_Personal_Priorities.pdf" style="color: #0D6BD8;">
+                                                                                    <img src="http://images.livestrong.org/2014/nav_series/arrow.png" alt="Arrow" border="0" height="28" width="16" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="question" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 20px; border-bottom: 1px solid #CCCCCC; margin: 0;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td width="100%" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 0;"><h5 style="font-weight: 400; color: #555555; font-family: Helvetica, Arial, sans-serif; font-size: 0.9375rem; line-height: 1.4em; margin: 0;">Telling your friends and family about your cancer diagnosis can be difficult. <a class="a" href="http://www.livestrong.org/we-can-help/just-diagnosed/telling-others-about-your-cancer?utm_source=message-3&amp;utm_medium=email&amp;utm_content=link-3&amp;utm_campaign=newly-diagnosed-nav-series" style="color: #555555; border-bottom: 2px solid #FECC09; display: inline; text-decoration: none;">Use this guide to assist you in sharing the news.</a></h5></td>
+                                                                            <td class="arrow" style="*border-collapse: collapse; border-spacing: 0; text-align: right; vertical-align: middle; line-height: 1.4em; padding: 0; padding-left: 20px;">
+                                                                                <a href="http://www.livestrong.org/we-can-help/just-diagnosed/telling-others-about-your-cancer/" style="color: #0D6BD8;">
+                                                                                    <img src="http://images.livestrong.org/2014/nav_series/arrow.png" alt="Arrow" border="0" height="28" width="16" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="question" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 20px; border-bottom: 1px solid #CCCCCC; margin: 0;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                        <tr>
+                                                                            <td width="100%" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 0;"><h5 style="font-weight: 400; color: #555555; font-family: Helvetica, Arial, sans-serif; font-size: 0.9375rem; line-height: 1.4em; margin: 0;">You are not alone on your cancer journey. <a class="a" href="http://www.livestrong.org/we-can-help/preparing-yourself/meeting-others-like-you?utm_source=message-3&amp;utm_medium=email&amp;utm_content=link-4&amp;utm_campaign=newly-diagnosed-nav-series" style="color: #555555; border-bottom: 2px solid #FECC09; display: inline; text-decoration: none;">Meet someone going through the same cancer experience as you.</a></h5></td>
+                                                                            <td class="arrow" style="*border-collapse: collapse; border-spacing: 0; text-align: right; vertical-align: middle; line-height: 1.4em; padding: 0; padding-left: 20px;">
+                                                                                <a href="http://www.livestrong.org/we-can-help/preparing-yourself/meeting-others-like-you/" style="color: #0D6BD8;">
+                                                                                    <img src="http://images.livestrong.org/2014/nav_series/arrow.png" alt="Arrow" border="0" height="28" width="16" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="video-image" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top;">
+                                        <a href="https://www.youtube.com/watch?v=4h2vZB0388E" style="color: #0D6BD8;">
+                                            <img src="http://images.livestrong.org/2014/nav_series/nav_series_email_iram_video.jpg" alt="Watch how Iram got the emotional support he needed." border="0" class="responsive-img" width="" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 600px; width: 100%;" />
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="note-container" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; background-color: #FFFFFF; padding: 35px 50px;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            <tr>
+                                                <td style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; line-height: 1.4em; padding: 0 0 20px 0;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="question-list last" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border: 1px solid #E1E1E1; border-radius: 4px; -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07); list-style-type: none; margin-bottom: 20px; padding: 0; margin: 0;">
+                                                        <tr>
+                                                            <td class="question" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 20px; border-bottom: 1px solid #CCCCCC; margin: 0;">
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                    <tr>
+                                                                        <td width="100%" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: middle; line-height: 1.4em; padding: 0;"><h5 style="font-weight: 400; color: #555555; font-family: Helvetica, Arial, sans-serif; font-size: 0.9375rem; line-height: 1.4em; margin: 0;">Do you need help keeping your friends and family up to date with news and information? <a class="a" href="http://www.livestrong.org/rally?utm_source=message-3&amp;utm_medium=email&amp;utm_content=link-5&amp;utm_campaign=newly-diagnosed-nav-series" style="color: #555555; border-bottom: 2px solid #FECC09; display: inline; text-decoration: none;">Start a LIVE<strong style="font-weight: 600;">STRONG</strong> Rally today.</a></h5></td>
+                                                                        <td class="arrow" style="*border-collapse: collapse; border-spacing: 0; text-align: right; vertical-align: middle; line-height: 1.4em; padding: 0; padding-left: 20px;">
+                                                                            <a href="http://www.livestrong.org/rally/" style="color: #0D6BD8;">
+                                                                                <img src="http://images.livestrong.org/2014/nav_series/arrow.png" alt="Arrow" border="0" height="28" width="16" style="border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cta last" style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; line-height: 1.4em; padding: 15px 0 0 0;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                        <tr>
+                                                            <td class="centered-text" style="*border-collapse: collapse; border-spacing: 0; text-align: center; vertical-align: top; line-height: 1.4em; padding: 0 0 20px 0; padding-left: 20px; padding-right: 20px;">
+                                                                <h4 style="font-weight: 400; font-family: Helvetica, Arial, sans-serif; font-size: 1.5rem; margin: 0;">Didn’t find what you were looking for?</h4>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="*border-collapse: collapse; border-spacing: 0; text-align: left; vertical-align: top; line-height: 1.4em; padding: 0 0 20px 0;">
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="*border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                    <tr>
+                                                                        <td class="button" style="*border-collapse: collapse; border-spacing: 0; text-align: center; vertical-align: top; line-height: 1.4em; padding: 15px 10px; background-color: #FECC09; border-radius: 4px; font-family: Helvetica, Arial, sans-serif; font-size: 1.5rem;">
+                                                                            <a href="http://www.livestrong.org/we-can-help/navigation-services/" style="color: #000000; display: block; text-decoration: none; -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out;">Ask a LIVE<strong style="font-weight: 600;">STRONG</strong> Navigator</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="centered-text last" style="*border-collapse: collapse; border-spacing: 0; text-align: center; vertical-align: top; line-height: 1.4em; padding: 0 0 0 0; padding-left: 20px; padding-right: 20px;">
+                                                                <h3 class="call" style="font-weight: 400; font-family: Helvetica, Arial, sans-serif; font-size: 1.5rem; margin: 0;">Or Call 1-855-220-7777</h3>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>                                        
+                                    </td>
+                                </tr>
+                                <!-- /NOTE TO VIEWER -->
+
+                            </table>
+                            <!-- /CONTENT TABLE -->
+
+                        </td>
+                    </tr>
+                </table>
+                <!-- /CONTAINER TABLE -->
+
+            </td>
+        </tr>
+    </table>
+    <!-- /BODY TABLE -->
+
+</body>
+</html>

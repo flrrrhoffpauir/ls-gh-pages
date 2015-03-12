@@ -1,0 +1,11 @@
+
+// Convert PX to REM
+// ------------------------------------------------------------------
+@function getRemSize($size) {
+	@return $size / 16 * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size * 1px;
+	font-size: getRemSize($size);
+}

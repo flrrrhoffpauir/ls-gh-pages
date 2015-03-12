@@ -1,0 +1,51 @@
+#sidebar {
+	background-color: #333333;
+	bottom: 0;
+	box-sizing: border-box;
+	color: #FEFEFE;
+	left: 0;
+	line-height: 1.2rem;
+	overflow-y: auto;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	width: $sidebar_width;
+
+	a {
+		color: #FEFEFE;
+		display: block;
+		padding: 1rem 0;
+		text-decoration: none;
+		transition: all 0.2s ease-out;
+		@include font-size(14);
+
+		&:hover {
+			color: darken(#FEFEFE, 20%);
+		}
+	}
+
+	.post-list {
+		list-style-type: none;
+		margin-bottom: 50px;
+		padding: 0;
+		text-align: left;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.post-item {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		margin: 0;
+
+		&:last-child {
+			border-bottom: 0 none;
+		}
+	}
+
+	h1 {
+		color: #DB3E3E !important;
+		margin: 0;
+	}
+}

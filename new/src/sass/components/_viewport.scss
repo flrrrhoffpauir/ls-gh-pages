@@ -1,0 +1,20 @@
+
+#viewport {
+	margin-left: $sidebar_width;
+	padding: 20px;
+
+	.post {
+		margin-bottom: 50px;
+	}
+
+	h1 {
+		padding-top: 20px;
+	}
+}
+
+/**
+ * Override body background color
+ */
+.toc {
+	background-color: #FEFEFE;
+}

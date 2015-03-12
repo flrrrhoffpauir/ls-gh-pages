@@ -1,0 +1,66 @@
+OLD, DOESN'T WORK:
+[[?[[S80:myfrid]]::1700::[[https://www.facebook.com/groups/588308801246476/::]]
+[[?[[S80:myfrid]]::1781::[[https://www.facebook.com/groups/182452155235375/::]]
+[[?[[S80:myfrid]]::1782::[[https://www.facebook.com/groups/232088680244788/::]]
+[[?[[S80:myfrid]]::1780::[[https://www.facebook.com/groups/246359288776412/::]]
+[[?[[S80:myfrid]]::1850::[[https://www.facebook.com/groups/399029583478607/::]]
+[[?[[S80:myfrid]]::1830::[[https://www.facebook.com/pages/Survivor-Summit/296319910385727::]]
+
+
+IF STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::https://www.facebook.com/groups/588308801246476/::]]
+[[?xx[[S80:myfrid]]xx::xx1780xx::https://www.facebook.com/groups/246359288776412/::]]
+[[?xx[[S80:myfrid]]xx::xx1781xx::https://www.facebook.com/groups/182452155235375/::]]
+[[?xx[[S80:myfrid]]xx::xx1782xx::https://www.facebook.com/groups/232088680244788/::]]
+[[?xx[[S80:myfrid]]xx::xx1830xx::https://www.facebook.com/pages/Survivor-Summit/296319910385727/::]]
+[[?xx[[S80:myfrid]]xx::xx1850xx::https://www.facebook.com/groups/399029583478607/::]]
+
+
+IF STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::https://www.facebook.com/groups/588308801246476/::]][[?xx[[S80:myfrid]]xx::xx1780xx::https://www.facebook.com/groups/246359288776412/::]][[?xx[[S80:myfrid]]xx::xx1781xx::https://www.facebook.com/groups/182452155235375/::]][[?xx[[S80:myfrid]]xx::xx1782xx::https://www.facebook.com/groups/232088680244788/::]][[?xx[[S80:myfrid]]xx::xx1830xx::https://www.facebook.com/pages/Survivor-Summit/296319910385727/::]][[?xx[[S80:myfrid]]xx::xx1850xx::https://www.facebook.com/groups/399029583478607/::]]
+538, 6200
+
+IF ELSE STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::https://www.facebook.com/groups/588308801246476/::
+[[?xx[[S80:myfrid]]xx::xx1780xx::https://www.facebook.com/groups/246359288776412/::
+[[?xx[[S80:myfrid]]xx::xx1781xx::https://www.facebook.com/groups/182452155235375/::
+[[?xx[[S80:myfrid]]xx::xx1782xx::https://www.facebook.com/groups/232088680244788/::
+[[?xx[[S80:myfrid]]xx::xx1830xx::https://www.facebook.com/pages/Survivor-Summit/296319910385727/::
+[[?xx[[S80:myfrid]]xx::xx1850xx::https://www.facebook.com/groups/399029583478607/::
+Cant Match myfrid to Facebook URL]]]]
+
+
+IF ELSE STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::https://www.facebook.com/groups/588308801246476/::[[?xx[[S80:myfrid]]xx::xx1780xx::https://www.facebook.com/groups/246359288776412/::[[?xx[[S80:myfrid]]xx::xx1781xx::https://www.facebook.com/groups/182452155235375/::[[?xx[[S80:myfrid]]xx::xx1782xx::https://www.facebook.com/groups/232088680244788/::[[?xx[[S80:myfrid]]xx::xx1830xx::https://www.facebook.com/pages/Survivor-Summit/296319910385727/::[[?xx[[S80:myfrid]]xx::xx1850xx::https://www.facebook.com/groups/399029583478607/::Cant Match myfrid to Facebook URL]]]]]]]]]]]]
+
+
+IF ELSE STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::<a href="https://www.facebook.com/groups/588308801246476/">Join the Facebook Group for Your Event</a>::
+[[?xx[[S80:myfrid]]xx::xx1780xx::<a href="https://www.facebook.com/groups/246359288776412/">Join the Facebook Group for Your Event</a>::
+[[?xx[[S80:myfrid]]xx::xx1781xx::<a href="https://www.facebook.com/groups/182452155235375/">Join the Facebook Group for Your Event</a>::
+[[?xx[[S80:myfrid]]xx::xx1782xx::<a href="https://www.facebook.com/groups/232088680244788/">Join the Facebook Group for Your Event</a>::
+[[?xx[[S80:myfrid]]xx::xx1830xx::<a href="https://www.facebook.com/pages/Survivor-Summit/296319910385727/">Join the Facebook Group for Your Event</a>::
+[[?xx[[S80:myfrid]]xx::xx1850xx::<a href="https://www.facebook.com/groups/399029583478607/">Join the Facebook Group for Your Event</a>::
+Cant Match myfrid to Facebook URL]]]]]]]]]]]]
+
+
+IF ELSE STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::<a href="https://www.facebook.com/groups/588308801246476/">Join the Facebook Group for Your Event</a>::[[?xx[[S80:myfrid]]xx::xx1780xx::<a href="https://www.facebook.com/groups/246359288776412/">Join the Facebook Group for Your Event</a>::[[?xx[[S80:myfrid]]xx::xx1781xx::<a href="https://www.facebook.com/groups/182452155235375/">Join the Facebook Group for Your Event</a>::[[?xx[[S80:myfrid]]xx::xx1782xx::<a href="https://www.facebook.com/groups/232088680244788/">Join the Facebook Group for Your Event</a>::[[?xx[[S80:myfrid]]xx::xx1830xx::<a href="https://www.facebook.com/pages/Survivor-Summit/296319910385727/">Join the Facebook Group for Your Event</a>::[[?xx[[S80:myfrid]]xx::xx1850xx::<a href="https://www.facebook.com/groups/399029583478607/">Join the Facebook Group for Your Event</a>::Cant Match myfrid to Facebook URL]]]]]]]]]]]]
+
+
+IF ELSE STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::Austin Challenge::
+[[?xx[[S80:myfrid]]xx::xx1780xx::Chicago Marathon::
+[[?xx[[S80:myfrid]]xx::xx1781xx::Marine Corps Marathon::
+[[?xx[[S80:myfrid]]xx::xx1782xx::NYC Marathon::
+[[?xx[[S80:myfrid]]xx::xx1830xx::Survivor Summit::
+[[?xx[[S80:myfrid]]xx::xx1850xx::Austin Marathon & Half Marathon::
+Cant Match myfrid to Event Name]]]]]]]]]]]]
+
+
+IF ELSE STATEMENTS:
+[[?xx[[S80:myfrid]]xx::xx1700xx::Austin Challenge::[[?xx[[S80:myfrid]]xx::xx1780xx::Chicago Marathon::[[?xx[[S80:myfrid]]xx::xx1781xx::Marine Corps Marathon::[[?xx[[S80:myfrid]]xx::xx1782xx::NYC Marathon::[[?xx[[S80:myfrid]]xx::xx1830xx::Survivor Summit::[[?xx[[S80:myfrid]]xx::xx1850xx::Austin Marathon & Half Marathon::Cant Match myfrid to Event Name]]]]]]]]]]]]
+
+
+
+[[?xx::x[[S1:primary_email]]x::No Email Address::[[S1:primary_email]]]]
